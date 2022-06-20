@@ -1,0 +1,31 @@
+<!-- Formulario para el registro  -->
+<div class="register">
+    <form class="custom-form" method="post">
+      <h1>Register</h1>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      <input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        placeholder="Contraseña"
+        required="required"
+      />
+      <input
+        type="password"
+        [(ngModel)]="confirmPassword"
+        name="password"
+        placeholder="Repite la contraseña"
+        required="required"
+      />
+      <p>
+        Si ya está registrado pulse <a href="http://localhost:4200/login" >aquí</a>
+    </p>
+      <button type="submit" (click)="register()">Register</button>
+    </form>
+  </div>

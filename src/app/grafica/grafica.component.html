@@ -1,0 +1,18 @@
+ <!-- Canvas para mostrar la gráfica -->
+ <div>
+    <div>
+      <div class="chart">
+        <canvas baseChart class="tamaño"
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-row">
+      
+    <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Cambiar Posición Leyenda</button>
+  </div>

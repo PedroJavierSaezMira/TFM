@@ -1,0 +1,24 @@
+<!-- Formulario para el login -->
+<div class="login">
+    <form class="custom-form" method="post">
+      <h1>Login</h1>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      <input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        placeholder="Contraseña"
+        required="required"
+      />
+      <p>
+        Si no está registrado pulse <a href="http://localhost:4200/register"> aquí </a>
+      </p>
+      <button type="submit" (click)="login()">Login</button>
+    </form>
+  </div>
